@@ -141,7 +141,7 @@ def count_features(feature_list):
 
     return feature_dict
 
-df = pd.read_excel('dataset/NotExposedControl.xlsx', index_col=None, header=None)
+df = pd.read_excel('dataset/ThyroidCancerNormalizedDataAll.xlsx', index_col=None, header=None)
 
 myData = df       
 print(myData)                                                  
