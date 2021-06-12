@@ -18,7 +18,7 @@ def eucdist(A, B):  # eucdist function simply calculates the distance between A 
     return sqrt(mysum)
 
 
-def k_nearest_neighboors(data, predict, k=15): # This function returns a prediction for a test vector.
+def k_nearest_neighboors(data, predict, k=3): # This function returns a prediction for a test vector.
     # 'Data' is the training set and 'predict' is a vector from test set.
    if len(data) >= k: # Prediction is either 1(healthy) or 0(diseased).
        warnings.warn('K is set to a value less than total voting group')

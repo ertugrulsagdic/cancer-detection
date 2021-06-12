@@ -3,7 +3,7 @@ import pandas as pd
 from math import e
 import matplotlib.pyplot as plt
 
-df = pd.read_excel('ThyroidCancerControl.xlsx', engine='openpyxl')
+df = pd.read_excel('dataset/ThyroidCancerDataAll.xlsx', engine='openpyxl')
 df_t = df.T
 
 index_list = ['Gene ID', 'Min_expression', 'Max_expression', 'Avg', 'Std.Dev.', 'Entropy']
@@ -28,7 +28,7 @@ for col in range(df_t.shape[1]):
     results['{}'.format(col)] = temp_df
 
 results = results.T.reset_index(drop=True).T
-# results.to_excel("result_control.xlsx", index=False, header=False)
+#results.to_excel("results.xlsx", index=False, header=False)
 
 min_exp = results.T.iloc[1:][1]
 max_exp = results.T.iloc[1:][2]
